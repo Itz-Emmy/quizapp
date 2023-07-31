@@ -1,6 +1,4 @@
-
-
- :root {
+:root {
   --bg-color: #fff;
   --text-color: #333;
  }
@@ -49,7 +47,7 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
- font-size: 0.8rem;
+ font-size: 0.6rem;
 }
 
 .option-container {
@@ -112,15 +110,22 @@ h1 {
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 1.8rem;
   text-align: center;
 }
-
+.result-container div {
+  text-alignv center;
+}
 .result-container span {
-  font-size: 6rem;
+  font-size: 3rem;
   font-weight: bold;
 }
-
+.redo {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  font-size: 1.5rem;
+}
 span.score {
     text-align: center;
 }
@@ -129,6 +134,7 @@ span.score {
 .happy,
 .pale {
   display: none;
+  font-size: 1.2rem;
 }
 span.overall-score {
     display: block;
@@ -219,4 +225,4 @@ span.displayAnswers {
     margin: 0;
     
 }
-}
+ }
