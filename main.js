@@ -132,7 +132,7 @@ const score = document.querySelector('.score');
   const paleFace = document.querySelectorAll('.pale');
 submitBtn.addEventListener('click', () => {
   if (score.textContent === '') {
-    window.alert('You must answer at least on question!')
+    window.alert('You must answer at least one question!')
   } else {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     resultContainer.style.display = 'flex';
