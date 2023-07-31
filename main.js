@@ -152,18 +152,24 @@ submitBtn.addEventListener('click', () => {
     score.style.color = '#333333';
     paleFace.forEach((emoji) => {
       emoji.style.display = 'inline'
+      happyFace.style.display = 'none'
+      sadFace.style.display = 'none
     });
   }
   if (score.textContent > 5) {
     score.style.color = 'green';
     happyFace.forEach((emoji) => {
       emoji.style.display = 'inline'
+      paleFace.style.display = 'none
+        sadFace.style.display = 'none
     });
   }
   if (score.textContent < 5) {
     score.style.color = 'red';
     sadFace.forEach((emoji) => {
       emoji.style.display = 'inline'
+      paleFace.style.display = 'none
+        happyFace.style.display = 'none
     });
   }
 });
