@@ -15,6 +15,10 @@
  .option-container label {
   border: 2px solid #FFFFFF !important;
  }
+
+ .preloader {
+  background-color: #333333 !important;
+ }
  }
 body {
   font-family: Arial, sans-serif;
