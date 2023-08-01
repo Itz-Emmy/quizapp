@@ -6,7 +6,7 @@
  @media (prefers-color-scheme: dark) {
   :root {
   /* --bg-color: #333; */
-  --text-color: #333333;
+  --text-color: #fff;
  }
  .home {
   background-image: url(./dark.png);
@@ -137,7 +137,7 @@ h2#question {
 h3 {
   font-size: 1.7rem;
   text-align: center;
-  color: var(--text-color);
+  color: #333;
 }
 
 .redo {
@@ -170,6 +170,7 @@ span.score {
 span.overall-score {
     display: block;
     text-align: center;
+    color: #333;
 }
 a,
 span.displayAnswers {
