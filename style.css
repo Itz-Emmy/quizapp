@@ -1,6 +1,4 @@
-
-
- :root {
+:root {
   --bg-color: #fff;
   --text-color: #333;
  }
@@ -44,6 +42,9 @@ body {
 h1 {
   text-align: center;
 }
+h2 {
+  font-size: 1.1rem;
+}
 
 h2#question {
     font-size: 1.1rem;
@@ -53,6 +54,7 @@ h2#question {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 10px;
+ font-size: 0.6rem;
 }
 
 .option-container {
@@ -117,6 +119,7 @@ h2#question {
   margin: auto;
 }
 h3 {
+<<<<<<< HEAD
   font-size: 1.7rem;
   text-align: center;
 }
@@ -130,9 +133,24 @@ h3 {
 
 .result-container span {
   font-size: 2rem;
+=======
+  font-size: 1.8rem;
+  text-align: center;
+}
+.result-container div {
+  text-alignv center;
+}
+.result-container span {
+  font-size: 3rem;
+>>>>>>> 43c219fc81e6cffaf20237c061efc03d862a5552
   font-weight: bold;
 }
-
+.redo {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  font-size: 1.5rem;
+}
 span.score {
     text-align: center;
 }
@@ -235,4 +253,4 @@ span.displayAnswers {
     margin: 0;
     
 }
-}
+ }
