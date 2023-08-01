@@ -19,6 +19,7 @@ fetch(apiUrl)
   // Store correct answers in an array
   
   fetchArray.forEach((item) => {
+    
     let options = [item.correct_answer, ...item.incorrect_answers];
       const generateOptionHTML = () => {
       let shuffledOptions  = options.sort(() => Math.random() - 0.5);
@@ -54,7 +55,7 @@ fetch(apiUrl)
    
     correctAnswersContainer.innerHTML += questionTag;
     correctAnswersContainer.innerHTML += generateCorrectAnswers();
-
+    
     
   });
 
@@ -117,6 +118,8 @@ fetch(apiUrl)
         let overallScore = document.querySelector('.overall-score');
         overallScore.textContent = questionNumber;
 
+        
+
       }
           });
           
@@ -150,7 +153,7 @@ submitBtn.addEventListener('click', () => {
   
   
 
-  if (score.textContent === 5) {
+  if (score.textContent == 5) {
     score.style.color = '#333333';
     paleFace.forEach((emoji) => {
       emoji.style.display = 'inline';
