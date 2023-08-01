@@ -45,9 +45,13 @@ h1 {
   text-align: center;
 }
 
+h2#question {
+    font-size: 1.1rem;
+}
+
 .options-row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 10px;
 }
 
@@ -56,7 +60,7 @@ h1 {
 }
 .option-container label {
   cursor: pointer;
-
+  font-size: 0.8rem;
   display: block;
   padding: 10px;
   border-radius: 5px;
@@ -91,7 +95,7 @@ h1 {
 }
 
 #submitBtn:hover {
-  background-color: #2980b9;
+  transform: scale(1.07);
 }
 
 .result-container {
@@ -109,14 +113,23 @@ h1 {
   background: #cccccc;
   border-radius: 5px;
 }
-
+.result-container div {
+  margin: auto;
+}
 h3 {
-  font-size: 3rem;
+  font-size: 1.7rem;
   text-align: center;
 }
 
+.redo {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  font-size: 0.8rem;
+}
+
 .result-container span {
-  font-size: 6rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -128,6 +141,7 @@ span.score {
 .happy,
 .pale {
   display: none;
+  font-size: 1.2rem;
 }
 span.overall-score {
     display: block;
@@ -135,7 +149,7 @@ span.overall-score {
 }
 a,
 span.displayAnswers {
-  font-size: 1.5rem;
+  font-size: 0.8rem;
   text-decoration: none;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -173,7 +187,10 @@ span.displayAnswers {
 
 .error {
   display: none;
-  background-color: #2980b9;
+  /* background-color: #2980b9; */
+  background-image: url(./error.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -185,20 +202,20 @@ span.displayAnswers {
   display: block;
   position: relative;
   padding: 25px;
-  color: #333;
+  color: #fff;
   text-decoration: none;
   top: 35%;
   width: 170px;
   text-align: center;
   margin: auto;
-  background-color: #fff;
+  background-color: #3498db;
 }
-.error h1 {
+.error h2 {
+  text-align: center;
   position: relative;
   top: 30%;
-  font-size: 3rem;
-  color: red;
-  transition: transform 0.3s ease;
+  font-size: 2rem;
+  color: #c40d14;
 }
 
 .error a:hover {
