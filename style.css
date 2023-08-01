@@ -1,18 +1,28 @@
 :root {
-  --bg-color: #fff;
+  /* --bg-color: #fff; */
   --text-color: #333;
  }
 
  @media (prefers-color-scheme: dark) {
   :root {
-  --bg-color: #333;
+  /* --bg-color: #333; */
   --text-color: #fff;
+ }
+ .home {
+  background-image: url(./dark.png);
+ }
+
+ .option-container label {
+  border: 2px solid #FFFFFF !important;
  }
  }
 body {
   font-family: Arial, sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
+      background-image: url(./home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .preloader {
@@ -37,6 +47,7 @@ body {
 #quiz-container {
     margin: 0 25%;
     padding: 25px;
+
 }
 
 h1 {
@@ -62,11 +73,12 @@ h2#question {
 }
 .option-container label {
   cursor: pointer;
-  font-size: 0.8rem;
+  font-weight: bold;
+  font-size: 1rem;
   display: block;
   padding: 10px;
   border-radius: 5px;
-  border: 2px solid #cccccc;
+  border: 2px solid #333333;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -138,7 +150,7 @@ h3 {
   display: inline-block;
   text-align: center;
   margin: auto;
-  font-size: 1.5rem;
+  font-size: 0.8rem;
 }
 span.score {
     text-align: center;
@@ -194,7 +206,6 @@ span.displayAnswers {
 
 .error {
   display: none;
-  /* background-color: #2980b9; */
   background-image: url(./error.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -211,18 +222,19 @@ span.displayAnswers {
   padding: 25px;
   color: #fff;
   text-decoration: none;
-  top: 35%;
+  top: 15%;
   width: 170px;
   text-align: center;
   margin: auto;
   background-color: #3498db;
 }
 .error h2 {
-  text-align: center;
-  position: relative;
-  top: 30%;
-  font-size: 2rem;
-  color: #c40d14;
+    text-align: center;
+    position: relative;
+    top: 10%;
+    padding: 5px;
+    font-size: 2rem;
+    color: #c40d14;
 }
 
 .error a:hover {
