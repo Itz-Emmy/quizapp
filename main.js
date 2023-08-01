@@ -1,7 +1,6 @@
-  // preloader
-  const preloader = document.querySelector('.preloader');
-  const errorScreen = document.querySelector('.error');
-  const quizBox = document.getElementById('quiz-container')
+const preloader = document.querySelector('.preloader');
+const errorScreen = document.querySelector('.error');
+const quizBox = document.getElementById('quiz-container')
 
 
 // Get Quiz details
@@ -154,25 +153,22 @@ submitBtn.addEventListener('click', () => {
   if (score.textContent === 5) {
     score.style.color = '#333333';
     paleFace.forEach((emoji) => {
-      emoji.style.display = 'inline'
-      happyFace.style.display = 'none'
-      sadFace.style.display = 'none
+      emoji.style.display = 'inline';
+     
     });
   }
   if (score.textContent > 5) {
     score.style.color = 'green';
     happyFace.forEach((emoji) => {
-      emoji.style.display = 'inline'
-      paleFace.style.display = 'none
-        sadFace.style.display = 'none
+      emoji.style.display = 'inline';
+    
     });
   }
   if (score.textContent < 5) {
     score.style.color = 'red';
     sadFace.forEach((emoji) => {
       emoji.style.display = 'inline'
-      paleFace.style.display = 'none
-        happyFace.style.display = 'none
+   
     });
   }
 });
